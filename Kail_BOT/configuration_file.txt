@@ -1,0 +1,28 @@
+[API]
+# Your Deriv API token - generate from https://app.deriv.com/account/api-token
+token = your_deriv_api_token
+
+[Trading]
+# Trading symbol (R_100 = Volatility 100 Index)
+symbol = R_100
+# Candle interval in seconds (60 = 1 minute)
+candle_interval = 60
+# Number of candles to analyze
+max_candles = 100
+# Contract duration in minutes
+duration = 1
+# Set to False for paper trading mode
+enable_trading = True
+
+[Risk]
+# Risk per trade as percentage of account balance
+risk_percent = 2.0
+
+[Schedule]
+# Trading hours in UTC
+start_hour = 6
+end_hour = 20
+
+[Logs]
+# CSV file to log trades
+trade_log = trade_log.csv
